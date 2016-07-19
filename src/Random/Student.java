@@ -1,3 +1,5 @@
+package Random;
+
 import java.io.Serializable;
 
 /**
@@ -10,6 +12,7 @@ public class Student implements Serializable{
 
     public Student(long id, String name) {
         this.id = id;
+        //seteamos desde un principio que el largo de los nombres de los estudiantes van a ser de 16 bytes.
         this.name = Utilities.adapt(name, 16);
     }
 

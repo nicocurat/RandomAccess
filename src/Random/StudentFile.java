@@ -1,3 +1,5 @@
+package Random;
+
 import java.io.*;
 
 /**
@@ -7,6 +9,7 @@ public class StudentFile {
 
     private File file;
     private RandomAccessFile raf;
+    // el size es 27: 8 del long(id), 16+2 del string(name), 1 del boolean (available).
     private int size = 27;
     private BinarySearchTree<StudentIndexFile> binarySearchTree;
 

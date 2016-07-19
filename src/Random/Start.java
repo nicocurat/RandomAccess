@@ -1,3 +1,5 @@
+package Random;
+
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
@@ -21,7 +23,7 @@ public class Start {
 
     public void add(){
         Random random = new Random();
-        System.out.print("Student's name: ");
+        System.out.print("Random.Student's name: ");
         String name = scanner.next();
         Student student = new Student(random.nextInt(1000 - 1) + 1,name);
         Register register = new Register(student,true);
